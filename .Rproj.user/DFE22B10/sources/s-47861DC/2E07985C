@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569548504536.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2E07985C",
+    "lastKnownWriteTime" : 1569583014,
+    "last_content_update" : 1569583014761,
+    "path" : "~/GitHub/DDP-Storms/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "cursorPosition" : "27,29",
+        "scrollLine" : "14"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

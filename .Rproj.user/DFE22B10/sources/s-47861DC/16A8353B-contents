@@ -1,0 +1,28 @@
+## Goals and instructions
+
+### Goal of this `shiny` application
+This `shiny` application allow you to select a period of time between 1950 and 2011 one or two type of economic damage and to see a map of the United States with the breakdown of the damage in billions of USD per state as well as the numeric values per state (unfortunately plotly for such map is not implemented).This shiny application allow you to:
+
+1. Select a period of time between 1950 and 2011
+
+2. Select one or two type(s) of economic damage 
+
+3. Display a map of the United States with the breakdown of the damage in billions of USD per state
+
+4. Display the numeric of the values per state (unfortunately plotly for such map is not implemented)
+
+
+### Step by step instruction
+To display a map of the United States with the breakdown of the damage in billions of USD per state and their numeric values you need to :
+
+1. Use from the top left panel the left and right cursors to select a period of time between 1950 and 2011
+
+2. Select from the bottom left panel the type of economic damage: 
+     a.   Property and crop damage
+     b.   Property damage
+     c.   Crop damage
+     
+3. By selection the first tab `Map of the economic damage per state` (display by default) you can see the map of the United States with the breakdown of the damage in billions of USD per state
+
+4. By selection the second tab `Values of the economic damage per state` you can see the values of the damage in billions of USD for the states
+

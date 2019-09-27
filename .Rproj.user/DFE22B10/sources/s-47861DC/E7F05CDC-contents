@@ -1,0 +1,57 @@
+library(shiny)
+library(ggplot2)
+
+shinyUI(
+  navbarPage("Damage to the US Economy per State Due to Weather Disasters",
+             tabPanel("Selection and Results",
+                      sidebarLayout(
+                        sidebarPanel(
+                          sliderInput("period", 
+                                      
+                                      "Select a Period of Time:", 
+                                      min = 1950,
+                                      max = 2011,
+                                      value = c(1960, 2011),
+                                      sep=""
+                          ),
+                          radioButtons("damageCategory",
+                                       
+                                       "Select a Category of Economic Damage",
+                                       c("Property and Harvest Damage" = "all", "Property Damage" = "property", "Harvest Damage" = "crop")
+                          )
+                        ),
+                        mainPanel(
+                          tabsetPanel(
+                            tabPanel(p(icon("line-chart"), "Map of the Economic Damage per State"),
+                                     column(7,
+                                            includeMarkdown("main_1.md"),
+                                            plotOutput("economicDamageState",  width = "150%", height ="500px")
+                                     )
+                            ),
+                            tabPanel(p(icon("table"), "Values of the Economic Damage per State"),
+                                     column(10,
+                                            includeMarkdown("main_2.md"),
+                                            tableOutput("view")
+                                     )
+                            )
+                            
+                          )
+                          
+                        )
+                      )
+             ),
+             
+             tabPanel("Instructions",
+                      mainPanel(
+                        includeMarkdown("instruction.md")
+                      )
+             ),
+             navbarMenu("More",
+                        tabPanel("Previous studies",
+                                 includeMarkdown("previousStudies.md")),
+                        tabPanel("References",
+                                 includeMarkdown("references.md"))
+             )
+  )
+)
+

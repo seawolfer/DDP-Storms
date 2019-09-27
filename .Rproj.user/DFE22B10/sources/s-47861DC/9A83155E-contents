@@ -1,0 +1,11 @@
+## References
+
+You can find below the references to the Storm Events Database [1-2] as well as the one for R[3] and shiny[4]: 
+
+[1] Storm Data FAQ Page. Storm Events Database. National Climatic Data Center. Retrieved 2014-04-14. 
+
+[2] National Weather Service Instruction 10-1605 concerning Storm Data preparation, August 17, 2007.
+
+[3] R Core Team, R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing. http://www.R-project.org/.
+
+[4] RStudio. shiny: Easy web applications in R. http://shiny.rstudio.com .
